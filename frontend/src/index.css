@@ -1,0 +1,486 @@
+/* Light & Modern Theme */
+.home-container {
+  text-align: center;
+  padding: 50px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f7faff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222831;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222831;
+}
+
+/* Play Button */
+.play-btn {
+  background: #5c67f2;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.play-btn:hover {
+  background: #4a54e1;
+}
+
+/* Leaderboard Section */
+.leaderboard {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  width: 350px;
+  text-align: left;
+}
+
+.leaderboard h3 {
+  text-align: center;
+  color: #5c67f2;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Small "View Full Leaderboard" Button */
+.leaderboard-btn {
+  background: #d3d3d3;
+  color: #222831;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0;
+  transition: 0.3s ease-in-out;
+}
+
+.leaderboard-btn:hover {
+  background: #bcbcbc;
+}
+
+/* How to Play Section */
+.how-to-play {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.how-to-play h3 {
+  color: #5c67f2;
+}
+
+.how-to-play p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Larger Modal */
+.modal-content {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Input & Select Styles */
+input,
+select {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Game Mode Buttons */
+.game-modes button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #e8e8e8;
+  font-weight: bold;
+}
+
+.game-modes button.selected {
+  background: #007bff;
+  color: white;
+}
+
+/* Mode Descriptions */
+.mode-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Start Button */
+.start-btn {
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.start-btn:hover {
+  background: #218838;
+}
+
+/* Game Over Message */
+.game-over {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+.game-over h2 {
+  font-size: 2rem;
+  color: #e63946;
+}
+
+.game-over p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.game-over button {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.game-over button:hover {
+  background: #ed2e2e;
+}
+
+/* Game Page Container */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f9f9f9; /* Light and modern */
+  color: #333; /* Dark gray text */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Score and Timer */
+.score-display, .timer {
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+/* Flag Image */
+.flag-image {
+  width: 200px;
+  height: 130px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Options Container */
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+/* Option Buttons */
+.option-btn {
+  background: #fff;
+  color: #222;
+  border: 2px solid #ddd;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.option-btn:hover {
+  background: #e6e6e6;
+}
+
+/* Timer Animation (Turn Red When Time Is Low) */
+.timer {
+  transition: color 0.3s ease-in-out;
+}
+
+.timer.low-time {
+  color: red;
+  font-weight: bold;
+}
+
+.close-btn {
+  background-color: #fff;
+  color: #222;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.close-btn:hover {
+  background-color: #d93636;
+}
+
+/* Smooth Flag Transition */
+.flag-image {
+  width: 200px;
+  height: 130px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 0.5s ease-in-out forwards;
+}
+
+/* Smooth fade-in and scale animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animate Options */
+.option-btn {
+  background: #fff;
+  color: #222;
+  border: 2px solid #ddd;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.4s ease-in-out forwards;
+}
+
+/* Delayed fade-in effect for options */
+.option-btn:nth-child(1) { animation-delay: 0.1s; }
+.option-btn:nth-child(2) { animation-delay: 0.2s; }
+.option-btn:nth-child(3) { animation-delay: 0.3s; }
+.option-btn:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.option-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.correct {
+  background-color: green !important;
+  color: white;
+}
+
+.wrong {
+  background-color: red !important;
+  color: white;
+}
+
+
+/* Leaderboard Container */
+.leaderboard-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333; /* Dark text */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.leaderboard-container h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ff9800; /* Orange highlight */
+}
+
+/* Leaderboard List */
+.leaderboard-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.leaderboard-container li {
+  background: #ffffff; /* White cards */
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight Top 3 Players */
+.leaderboard-container li:nth-child(1) {
+  background: #ffeb3b; /* Soft gold */
+  color: #333;
+}
+
+.leaderboard-container li:nth-child(2) {
+  background: #e0e0e0; /* Soft silver */
+}
+
+.leaderboard-container li:nth-child(3) {
+  background: #ffcc80; /* Soft bronze */
+}
+
+/* Score Display */
+.leaderboard-container b {
+  color: #ff9800; /* Orange */
+}
+
+/* Back Button */
+.back-btn {
+  background: #42a5f5; /* Light blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 15px;
+}
+
+.back-btn:hover {
+  background: #64b5f6;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .leaderboard-container {
+    width: 90%;
+  }
+
+  .leaderboard-container li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
